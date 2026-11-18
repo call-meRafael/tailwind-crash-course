@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,21 +12,63 @@
     <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
 
     <!-- Text Colors -->
+    <p class="text-black">Tailwind is awesome</p>
+    <!-- Preto e branco não possuem diferentes tonalidades no Tailwind CSS   -->
+    <p class="text-white">Tailwind is awesome</p>
+
+    <!-- Cores com tonalidades adotam um número entre 50 e 900 -->
+    <p class="text-red-500">Tailwind is awesome</p>
+    <p class="text-green-450">Tailwind is awesome</p>
+    <p class="text-emerald-500">Tailwind is awesome</p>
+    <p class="text-zinc-200">Tailwind is awesome</p>
+    <p class="text-slate-700">Tailwind is awesome</p>
+    <p class="text-stone-300">Tailwind is awesome</p>
 
     <!-- Background Colors -->
+    <p class="bg-slate-800 text-red-200">Tailwind is unbelievable</p>
+    <p class="bg-emerald-400">Tailwind is unbelievable</p>
+    <p class="bg-yellow-300">Tailwind is unbelievable</p>
+    <p class="bg-indigo-800 text-white">Tailwind is unbelievable</p>
 
     <!-- Text Underline -->
+    <p class="underline decoration-red-500">Tailwind is awesome</p>
+    <p class="underline decoration-emerald-500">Tailwind is awesome</p>
+    <p class="underline decoration-yellow-500">Tailwind is awesome</p>
 
     <!-- Border Colors -->
+    <input type="text" class="border border-blue-400" />
+    <input type="text" class="border border-green-400" />
+    <input type="text" class="border border-red-400" />
 
     <!-- Divide Colors -->
+    <div class="divide-y">
+      <div class="text-blue-250">Item 1</div>
+      <div class="text-red-300">Item 2</div>
+      <div class="text-indigo-400">Item 3</div>
+      <div class="text-slate-150">Item 4</div>
+      <div class="text-zinc-300">Item 5</div>
+    </div>
 
     <!-- Outline Colors -->
+    <button class="outline outline-red-500 p-2">Hello</button>
 
     <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+    <button class="shadow-lg bg-cyan-400 shadow-cyan-400 p-2">Subscribe</button>
+
+    <button
+      class="shadow-lg bg-cyan-400 shadow-orange-400/75 text-4xl font-bold text-white text-shadow-lg text-shadow-black/40 p-2"
+    >
+      Subscribe
+    </button>
 
     <!-- Accent Colors -->
+    <input type="checkbox" name="" id="" class="accent-purple-500" checked />
 
     <!-- Arbitrary Colors -->
+    <div
+      class="bg-[#00DDFA] flex items-center justify-center w-60 text-[#FA0080] border-[#FADD00] border-2 rounded-lg p-4 m-4"
+    >
+      <p class="p-2">Cores Arbitrárias</p>
+    </div>
   </body>
 </html>
