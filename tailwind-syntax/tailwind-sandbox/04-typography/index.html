@@ -1,16 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Isometra&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Spinnaker&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            "bungee-shade": ["Bungee Shade"],
+            "fira-code": ["Fira Code"],
+            inter: ["Inter"],
+            isometra: ["Isometra"],
+            montserrat: ["Montserrat"],
+            "playfair-display": ["Playfair Display"],
+            quicksand: ["Quicksand"],
+            spinnaker: ["Spinnaker"],
+          },
+        },
+      };
+    </script>
     <title>Typography</title>
   </head>
   <body>
     <!-- Font Family -->
+    <div class="font-montserrat">Tailwind is awesome</div>
+    <div class="font-isometra">Tailwind is awesome</div>
+    <div class="font-fira-code">Tailwind is awesome</div>
 
     <!-- Font Size -->
+     <div class="text-xs mt-8">Tailwind is awesome</div>
+     <div class="text-sm">Tailwind is awesome</div>
+     <div class="text-base">Tailwind is awesome</div>
+     <div class="text-lg">Tailwind is awesome</div>
+     <div class="text-xl">Tailwind is awesome</div>
 
     <!-- Font Weight -->
 
