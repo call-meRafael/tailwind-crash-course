@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,12 +7,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Backgrounds & Shadows</title>
   </head>
-  <body>
+  <body class="px-2 py-2">
     <!-- Background Classes -->
+    <div
+      class="h-64 w-72 bg-no-repeat bg-cover bg-center"
+      style="background-image: url(&quot;../assets/img/img1.jpg&quot;)"
+    ></div>
 
     <!-- Gradients -->
+    <div
+      class="h-24 bg-gradient-to-r from-cyan-500 to-blue-500 p-2 border border-2 border-yellow-500 rounded-lg mt-8"
+    ></div>
 
     <!-- Shadows -->
+    <div class="w-06 mt-6 ml-4 p-3 shadow">I would have lived in peace. But my enemies brought me war.</div>
+    <div class="w-06 mt-6 ml-4 p-3 shadow-md">I would have lived in peace. But my enemies brought me war.</div>
+    <div class="w-06 mt-6 ml-4 p-3 shadow-lg">I would have lived in peace. But my enemies brought me war.</div>
+    <div class="w-06 mt-6 ml-4 p-3 shadow-xl">I would have lived in peace. But my enemies brought me war.</div>
+    <div class="w-06 mt-6 ml-4 p-3 shadow-2xl">I would have lived in peace. But my enemies brought me war.</div>
+    <div class="w-06 mt-6 ml-4 p-3 shadow-inner">I would have lived in peace. But my enemies brought me war.</div>
 
     <!-- Mix Blend -->
   </body>

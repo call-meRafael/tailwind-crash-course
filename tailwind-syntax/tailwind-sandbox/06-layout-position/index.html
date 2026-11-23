@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,26 +9,87 @@
   </head>
   <body>
     <!-- Positioning -->
+    <div class="relative w-1/2 h-12 bg-red-200">
+      <p>Parent Element</p>
+
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
 
     <!-- Top left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Top right corner -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Bottom left corner -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Bottom right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Span top edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div
+        class="absolute inset-x-0 top-0 h-16 bg-yellow-300 border border-red-200"
+      ></div>
+    </div>
 
     <!-- Span left edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div
+        class="absolute inset-y-0 top-0 w-16 bg-yellow-300 border border-blue-200"
+      ></div>
+    </div>
 
     <!-- Span right edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div
+        class="absolute inset-y-0 right-0 w-16 bg-yellow-300 border border-purple-200"
+      ></div>
+    </div>
 
     <!-- Span bottom edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div
+        class="absolute inset-x-0 h-16 bottom-0 bg-yellow-300 border border-orange-500"
+      ></div>
+    </div>
 
     <!-- Display Classes -->
+    <div>
+      All men are not created equal...
+      <span class="inline underline">The weak have deceived you.</span> They
+      would say the meek should inherit the Earth.
+      <span class="inline-block text-blue-400">
+        say the meek should inherit the Earth. That the strong should nurture
+        the gentle. say the meek should inherit the Earth.
+      </span>
+      This is the Noble Lie of Demokracy. The cancer that poisoned mankind...
+      <span class="block font-bold">Power must be claimed.</span> Wealth won.
+      Rule, dominion, empire purchased with blood. You scarless children deserve
+      nothing. You do not know pain. You do not know what your forefathers
+      sacrificed to place you on these heights. But soon, you will. Soon, we
+      will teach you why Gold rules mankind. And I promise, of those among you,
+      only those fit for power will survive.
+      <span class="hidden">This is hidden</span>
+    </div>
 
     <!-- Z-Index -->
+    <div class="relative h-36">
+      <div class="absolute left-10 w-24 h-24 bg-blue-300">Item 1</div>
+      <div class="absolute w-24 left-20 h-24 bg-blue-400">Item 2</div>
+      <div class="absolute w-24 left-40 h-24 bg-blue-500 z-10">Item 3</div>
+      <div class="absolute w-24 left-60 h-24 bg-blue-600 z-20">Item 4</div>
+      <div class="absolute w-24 left-80 h-24 bg-blue-700 z-30">Item 5</div>
+    </div>
 
     <!-- Floats -->
   </body>
