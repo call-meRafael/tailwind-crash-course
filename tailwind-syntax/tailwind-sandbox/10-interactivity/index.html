@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -9,17 +9,55 @@
   </head>
   <body>
     <!-- Hover State Styling -->
+    <button
+      class="bg-black text-white py-3 px-5 rounded-lg m-3 hover:bg-orange-400 hover:text-black"
+    >
+      Submit
+    </button>
 
     <!-- Focus State Styling -->
+    <button
+      class="bg-black text-white py-3 px-5 rounded-lg m-3 focus:bg-green-400 focus:text-black drop-shadow-xl"
+    >
+      Submit
+    </button>
 
     <!-- Active State Styling -->
+    <button
+      class="bg-black text-white py-3 px-5 rounded-lg m-3 active:bg-cyan-400 active:text-black drop-shadow-lg"
+    >
+      Submit
+    </button>
 
     <!-- Styling based on parent state -->
+    <a
+      href=""
+      class="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500 cursor:pointer"
+    >
+      <h3 class="group-hover:text-white group-hover:drop-shadow-md">
+        Darrow O'Lykus
+      </h3>
+      <p class="group-hover:text-white group-hover:drop-shadow-md">
+        "I would have lived in peace. But my enemies brought me war."
+      </p>
+    </a>
 
     <!-- Pseudo Classes -->
+    <ul>
+      <li class="first:bg-red-200">Item 1</li>
+      <li class="first:bg-red-200">Item 2</li>
+      <li class="first:bg-red-200">Item 3</li>
+      <li class="first:bg-red-200">Item 4</li>
+      <li class="first:bg-red-200">Item 5</li>
+      <li class="first:bg-red-200">Item 6</li>
+    </ul>
 
     <!-- Appearance -->
     <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+     <select name="" id="" class="appearance-none">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+     </select>
 
     <!-- Cursor -->
 
